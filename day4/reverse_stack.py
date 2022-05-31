@@ -3,7 +3,6 @@ from collections import deque
 stack=[]
 """Recursive function to insert an item at the bottom of a given stack"""
 def insertAtBottom(mystack, item):
- 
     if not mystack:
         mystack.append(item)
         return
@@ -13,7 +12,6 @@ def insertAtBottom(mystack, item):
   
 """Recursive function to reverse a given stack"""
 def reverseStack(mystack):
-
     if not mystack:
         return
     item = mystack.pop()
