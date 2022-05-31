@@ -1,3 +1,5 @@
+"""Defination:Program to Implement Merge Sort"""
+
 def mergeSort(my_list):
     if len(my_list)>1:
         mid = len(my_list)//2
