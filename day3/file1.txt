@@ -1,0 +1,1 @@
+When it is required to create a class to get all the possible subsets of integers from a list, object oriented method is used. Here, a class is defined, and attributes are defined. Functions are defined within the class that perform certain operations. An instance of the class is created, and the functions are used to perform calculator operations
