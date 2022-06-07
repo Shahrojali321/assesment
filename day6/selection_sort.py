@@ -10,5 +10,5 @@ def sorting(my_list):
     return my_list
 if __name__=='__main__':  
     list1=input('Enter the list of numbers : ').split()
-    my_list=[int(x) for x in list1]
-    print(f'List after sorting is : {sorting(my_list)}')
+    MY_LIST=[int(x) for x in list1]
+    print(f'List after sorting is : {sorting(MY_LIST)}')
