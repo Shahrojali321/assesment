@@ -1,19 +1,20 @@
 """Defination:Program that accept some words and count the number of distinct words"""
-lst=[]
 def counter(lst):
-    dict={}
-    for i in lst:
-        if i not in dict.keys():
-            dict[i]=1
+    """Algorithm to count the number of distint words """
+    dictonary={}
+    for variable in lst:
+        if variable not in dictonary.keys():
+            dictonary[variable]=1
         else:
-            dict[i]=dict[i]+1
-    
-    for j in dict.keys():
-        print(j,":",dict[j])
-counter(lst)
-n=int(input("enter the length of list: "))
-for i in range(0,n):
-    element=input("Enter the element of a list: ")
-    lst.append(element)
-print(lst)
-print(f"the length of list is: {n}")
+            dictonary[variable]=dictonary[variable]+1
+    for j in dictonary.keys():
+        print(j,":",dictonary[j])
+if __name__=='__main__':
+    LIST=[]
+    counter(LIST)
+    list_length=int(input("enter the length of list: "))
+    for i in range(0,list_length):
+        element=input("Enter the element of a list: ")
+        LIST.append(element)
+    print(LIST)
+    print(f"the length of list is: {list_length}")

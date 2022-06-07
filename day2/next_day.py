@@ -1,6 +1,6 @@
 """Defination:program to get next day of a given date"""
 def nxt_date(year,month,day):
-
+    """Algorithm to get next day of given date """
     if (year % 400 == 0):
         leap_year = True
     elif (year % 100 == 0):
@@ -31,8 +31,9 @@ def nxt_date(year,month,day):
             month += 1
     next_date=["The next date is [yyyy-mm-dd]: %d-%d-%d" % (year, month, day)]
     return next_date
-year = int(input("Input a year: "))
-month = int(input("Input a month [1-12]: "))
-day = int(input("Input a day [1-31]: "))
-result=nxt_date(year,month,day)
-print(f"The next date is : {result}")
+if __name__=='__main__':
+    YEAR = int(input("Input a year: "))
+    MONTH = int(input("Input a month [1-12]: "))
+    DAY = int(input("Input a day [1-31]: "))
+    result=nxt_date(YEAR,MONTH,DAY)
+    print(f"The next date is : {result}")
