@@ -1,18 +1,21 @@
 """Defination:to find the number pattern """
 def patt(row):
-    k=1
-    i=1
-    while i<=row:
-        b=1
-        while b<=row-i:
+    """algorithm of number pattern"""
+    digit_range=1
+    digit=1
+    while digit<=row:
+        gap=1
+        while gap<=row-digit:
             print(" ",end=" ")
-            b=b+1
+            gap=gap+1
         j=1
-        while j<=k:
-            print(i,end=" ")
+        while j<=digit_range:
+            print(digit,end=" ")
             j=j+1
-        k=k+2
+        digit_range=digit_range+2
         print()
-        i=i+1
-row=int(input("enter the number of rows: "))
-result=patt(row)
+        digit=digit+1
+if __name__=='__main__':
+    RAW=int(input("enter the number of rows: "))
+    patt(RAW)
+    

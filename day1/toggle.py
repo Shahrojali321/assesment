@@ -1,15 +1,17 @@
 """Defination: To convert toggle string."""
 def tog(string):
+    """Algorithm goggle string"""
     string1 = ''
     for i in string:
-        if(i >= 'a' and i <= 'z'): 
-            string1 = string1 + chr((ord(i) - 32)) 
-        elif(i >= 'A' and i <= 'Z'):
+        if('a'<= i <= 'z'):
+            string1 = string1 + chr((ord(i) - 32))
+        elif('A'<= i <= 'Z'):
             string1 = string1 + chr((ord(i) + 32))
         else:
             string1 = string1 + i
     return string1
-string = input("Please Enter your Own String : ")
-result=tog(string) 
-print(f"\nOriginal String                      =  {string}")
-print(f"The Given String After Toggling Case =  {result}")
+if __name__=='__main__':
+    STRING = input("Please Enter your Own String : ")
+    result=tog(STRING)
+    print(f"\nOriginal String                      =  {STRING}")
+    print(f"The Given String After Toggling Case =  {result}")
