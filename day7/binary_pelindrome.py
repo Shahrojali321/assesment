@@ -6,10 +6,10 @@ def check_binary_pelindrome(number):
     binary=binary[2:]
     temp=binary[-1::-1]
     if(temp==binary):
-        print(f"True \n Binary representation of number={number} is {binary} which is palindrome as well")
+        print(f"True \n Binary of number={number} is {binary} which is palindrome as well")
     else:
-        print(f"False \n Binary representation of number={number} is {binary} which is not palindrome ")
-    return
+        print(f"False \n Binary of number={number} is {binary} which is not palindrome ")
+
 if __name__=='__main__':
-    number=int(input("enter the number: "))
-    check_binary_pelindrome(number)
+    num=int(input("enter the number: "))
+    check_binary_pelindrome(num)
