@@ -1,13 +1,10 @@
 """defination:To convert the Snake notation to Pascel notation"""
-    
-def snake_case(str):
+def snake_case(string1):
     """To convert the Snake notation to Pascel notation"""
-    sc=str.split("_")
-    for word in range(len(sc)):
-        sc[word]=sc[word].capitalize()
-    return "".join(sc)
-
+    string=string1.split("_")
+    for word in range(len(string)):
+        string[word]=string[word].capitalize()
+    return "".join(string)
 if __name__=='__main__':
-
-    input=input("Enter the snake_case: ")
-    print(f"Pascel case is: {snake_case(input)} ")
+    INPUT=input("Enter the snake_case: ")
+    print(f"Pascel case is: {snake_case(INPUT)} ")
